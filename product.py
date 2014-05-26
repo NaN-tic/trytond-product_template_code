@@ -10,9 +10,9 @@ __metaclass__ = PoolMeta
 
 class Template:
     __name__ = "product.template"
-    code = fields.Function(fields.Char('Code',
-            on_change_with=['products']), 'on_change_with_code')
+    code = fields.Function(fields.Char('Code'), 'on_change_with_code')
 
+    @fields.depends('products')
     def on_change_with_code(self, name=None):
         code = None
         if self.products:
