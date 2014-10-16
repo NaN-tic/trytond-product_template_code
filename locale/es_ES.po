@@ -5,3 +5,7 @@ msgstr "Content-Type: text/plain; charset=utf-8\n"
 msgctxt "field:product.template,code:"
 msgid "Code"
 msgstr "Código"
+
+msgctxt "help:product.template,code:"
+msgid "Code Product Template"
+msgstr "Código de la plantilla del producto"
